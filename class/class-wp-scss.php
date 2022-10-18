@@ -21,10 +21,9 @@ class Wp_Scss {
 
     $this->scss_dir         = $scss_dir;
     $this->css_dir          = $css_dir;
+    $this->cache            = $cache_dir;
     $this->compile_errors   = array();
     $this->scssc            = new Compiler();
-
-    $this->cache = $cache_dir;
 
     $this->scssc->setOutputStyle( $compile_method );
     $this->scssc->setImportPaths( $this->scss_dir );

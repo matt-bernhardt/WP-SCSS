@@ -137,8 +137,8 @@ class Wp_Scss_Settings {
     );
 
     add_settings_field(
-      'wpscss_cache_dir',                       // ID
-      'Cache Location',                         // Title
+      'wpscss_cache_dir',                     // ID
+      'Cache Location',                       // Title
       array( $this, 'input_text_callback' ),  // Callback
       'wpscss_options',                       // Page
       'wpscss_paths_section',                 // Section
